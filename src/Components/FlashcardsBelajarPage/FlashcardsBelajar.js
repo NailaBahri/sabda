@@ -8,10 +8,10 @@ import { useNavigate } from 'react-router-dom';
 
 
 const flashcards = [
-  { questionImage: '/images/belajar/belajar.png', answerVideo: '/videos/belajar/isyaratbelajar.mp4'},
-  { questionImage: '/images/belajar/membaca.png', answerVideo: '/videos/belajar/isyaratmembaca.mp4' },
-  { questionImage: '/images/belajar/menulis.png', answerVideo:'/videos/belajar/isyaratmenulis.mp4' },
-  { questionImage: '/images/belajar/temanteman.png', answerVideo: '/videos/belajar/isyarattemanteman.mp4'}
+  { questionImage: 'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514128/belajar_qm9nep.png', answerVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758513239/isyaratbelajar_m5nnvb.mp4'},
+  { questionImage: 'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514129/membaca_dlg3mk.png', answerVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758513232/isyaratmembaca_tae97v.mp4' },
+  { questionImage: 'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514136/menulis_p75s4f.png', answerVideo:'https://res.cloudinary.com/dnaf6s355/video/upload/v1758513236/isyaratmenulis_eebkuo.mp4' },
+  { questionImage: 'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514129/temanteman_vhjbek.png', answerVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758513234/isyarattemanteman_trvlnr.mp4'}
 ];
 
 
@@ -50,7 +50,7 @@ export default function FlashcardsBelajar()  {
       setCurrentIndex(currentIndex + 1);
       setIsFlipped(false);
     } else {
-      setPopupMessage(<img src="/images/popupselesai.png" alt="selesai" />);
+      setPopupMessage(<img src="https://res.cloudinary.com/dnaf6s355/image/upload/v1758687122/popupselesai_m9pltm.png" alt="selesai" />);
       setShowPopup(true);
       setTimeout(() => setAnimatePopup(true), 10);
     }
@@ -84,7 +84,7 @@ export default function FlashcardsBelajar()  {
     <Wrapper>
       <BackgroundContainer>
          <Home onClick={() => navigate('/daftarcerita')}>
-              <img src='/images/home.png' alt="home" />
+              <img src='https://res.cloudinary.com/dnaf6s355/image/upload/v1758681683/home_g4ct7v.png' alt="home" />
               </Home>
         <AnimatePresence mode="wait">
           <motion.div
@@ -107,7 +107,7 @@ export default function FlashcardsBelajar()  {
                             objectFit: "contain",
                             width: "100%",
                             height: "100%"}}/>
-                            <ReverseHint src="/images/reversearrow.png" alt="Balik kartu" />
+                            <ReverseHint src="https://res.https://res.cloudinary.com/dnaf6s355/image/upload/v1758687003/reversearrow_cna2nj.pngcloudinary.com/dnaf6s355/image/upload/v1758515160/isyarat_tpbr1s.png" alt="Balik kartu" />
                   </Front>
                   <Back>
                     <video width="700" height="350" controls
@@ -130,8 +130,8 @@ export default function FlashcardsBelajar()  {
                           </AnimatePresence>
                           <ButtonArea>
                           <Controls>
-                              <Button1 onClick={handleReset}> <img src='images/kocokkartu.png' alt="kocok kartu"></img></Button1>
-                              <Button2 onClick={handleNextCard}> <img src='images/kartuselanjutnya.png' alt="kartu selanjutnya"></img></Button2>
+                              <Button1 onClick={handleReset}> <img src='https://res.cloudinary.com/dnaf6s355/image/upload/v1758515878/kocokkartu_cxib4h.png' alt="kocok kartu"></img></Button1>
+                              <Button2 onClick={handleNextCard}> <img src='https://res.cloudinary.com/dnaf6s355/image/upload/v1758515292/kartuselanjutnya_hxaquq.png' alt="kartu selanjutnya"></img></Button2>
                           </Controls>
                           </ButtonArea>
                       </BackgroundContainer>
@@ -149,10 +149,10 @@ export default function FlashcardsBelajar()  {
                       {popupMessage}
                       <PopupButton>
                       <Button3 onClick={handleBelajarLagi}>
-                          <img src='images/belajarlagi.png' alt="belajarlagi" />
+                          <img src='https://res.cloudinary.com/dnaf6s355/image/upload/v1758514129/belajarlagi_vyrwq2.png' alt="belajarlagi" />
                       </Button3>
                       <Button4 onClick={handleLanjutGames}>
-                          <img src='images/lanjutgame.png' alt="lanjutgames" />
+                          <img src='https://res.cloudinary.com/dnaf6s355/image/upload/v1758516417/lanjutgame_evsr8q.png' alt="lanjutgames" />
                       </Button4>    
                       </PopupButton>
                       </div> 

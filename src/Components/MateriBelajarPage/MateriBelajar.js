@@ -3,46 +3,46 @@ import { Wrapper, Home, Button, CloseButton, PopupContent, PopupOverlay, LetterC
 import { Link, useNavigate} from 'react-router-dom';
 
 const cardData = [
-    { title: 'belajar', video:'/videos/belajar/isyaratbelajar.mp4', image: '/images/belajar/belajar.png', label: '/images/belajar/labelbelajar.png',  
+    { title: 'belajar', video:'https://res.cloudinary.com/dnaf6s355/video/upload/v1758513239/isyaratbelajar_m5nnvb.mp4', image: 'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514128/belajar_qm9nep.png', label: '/images/belajar/labelbelajar.png',  
         letters: [
-      { letter: "B", video: "/videos/huruf/B.mp4" },
-      { letter: "E", video: "/videos/huruf/E.mp4" },
-      { letter: "L", video: "/videos/huruf/L.mp4" },
-      { letter: "A", video: "/videos/huruf/A.mp4" },
-      { letter: "J", video: "/videos/huruf/J.mp4" },
-      { letter: "A", video: "/videos/huruf/A.mp4" },
-      { letter: "R", video: "/videos/huruf/R.mp4" },
+      { letter: "B", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513271/B_qao3nh.mp4" },
+      { letter: "E", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513282/E_rpsnca.mp4" },
+      { letter: "L", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513304/L_yzsrw1.mp4" },
+      { letter: "A", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513265/A_xtc2y1.mp4" },
+      { letter: "J", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513305/J_iaodhm.mp4" },
+      { letter: "A", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513265/A_xtc2y1.mp4" },
+      { letter: "R", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513314/R_gmlio5.mp4" },
     ],},
-    { title: 'membaca', video:'/videos/belajar/isyaratmembaca.mp4', image: '/images/belajar/membaca.png', label:'/images/belajar/labelmembaca.png',
+    { title: 'membaca', video:'https://res.cloudinary.com/dnaf6s355/video/upload/v1758513232/isyaratmembaca_tae97v.mp4', image: 'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514129/membaca_dlg3mk.png', label:'/images/belajar/labelmembaca.png',
         letters: [
-        { letter: "M", video: "/videos/huruf/M.mp4" },
-        { letter: "E", video: "/videos/huruf/E.mp4" },
-        { letter: "M", video: "/videos/huruf/M.mp4" },
-        { letter: "B", video: "/videos/huruf/B.mp4" },
-        { letter: "A", video: "/videos/huruf/A.mp4" },
-        { letter: "C", video: "/videos/huruf/C.mp4" },
-        { letter: "A", video: "/videos/huruf/A.mp4" },
+        { letter: "M", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513314/M_xdnnwr.mp4" },
+        { letter: "E", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513282/E_rpsnca.mp4" },
+        { letter: "M", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513314/M_xdnnwr.mp4" },
+        { letter: "B", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513271/B_qao3nh.mp4" },
+        { letter: "A", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513265/A_xtc2y1.mp4" },
+        { letter: "C", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513275/C_hmzw0r.mp4" },
+        { letter: "A", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513265/A_xtc2y1.mp4" },
         ],
     },
-    { title: 'menulis', video:'/videos/belajar/isyaratmenulis.mp4', image: '/images/belajar/menulis.png', label:'/images/belajar/labelmenulis.png',
+    { title: 'menulis', video:'https://res.cloudinary.com/dnaf6s355/video/upload/v1758513236/isyaratmenulis_eebkuo.mp4', image: 'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514136/menulis_p75s4f.png', label:'/images/belajar/labelmenulis.png',
                 letters: [
-        { letter: "M", video: "/videos/huruf/M.mp4" },
-        { letter: "E", video: "/videos/huruf/E.mp4" },
-        { letter: "N", video: "/videos/huruf/N.mp4" },
-        { letter: "U", video: "/videos/huruf/U.mp4" },
-        { letter: "L", video: "/videos/huruf/L.mp4" },
-        { letter: "I", video: "/videos/huruf/I.mp4" },
-        { letter: "S", video: "/videos/huruf/S.mp4" },
+        { letter: "M", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513314/M_xdnnwr.mp4" },
+        { letter: "E", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513282/E_rpsnca.mp4" },
+        { letter: "N", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513308/N_yfm95q.mp4" },
+        { letter: "U", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513329/U_pynxyg.mp4" },
+        { letter: "L", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513304/L_yzsrw1.mp4" },
+        { letter: "I", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513296/I_o0kjif.mp4" },
+        { letter: "S", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513316/S_auwvnm.mp4" },
         ],
     },
-    { title: 'teman-teman', video:'/videos/belajar/isyarattemanteman.mp4', image: '/images/belajar/temanteman.png', label: '/images/belajar/labeltemanteman.png',
+    { title: 'teman-teman', video:'https://res.cloudinary.com/dnaf6s355/video/upload/v1758513234/isyarattemanteman_trvlnr.mp4', image: 'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514129/temanteman_vhjbek.png', label: '/images/belajar/labeltemanteman.png',
         // Teman-teman
         letters: [
-        { letter: "T", video: "/videos/huruf/T.mp4" },
-        { letter: "E", video: "/videos/huruf/E.mp4" },
-        { letter: "M", video: "/videos/huruf/M.mp4" },
-        { letter: "A", video: "/videos/huruf/A.mp4" },
-        { letter: "N", video: "/videos/huruf/N.mp4" },
+        { letter: "T", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513324/T_mbkm3s.mp4.mp4" },
+        { letter: "E", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513282/E_rpsnca.mp4" },
+        { letter: "M", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513314/M_xdnnwr.mp4" },
+        { letter: "A", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513265/A_xtc2y1.mp4" },
+        { letter: "N", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513308/N_yfm95q.mp4" },
         ]
     },
 ]
@@ -57,17 +57,17 @@ const MateriBelajar = () => {
         <Wrapper>
             <BackgroundContainer>
                 <Home onClick={()=> navigate('/daftarcerita')}>
-                 <img src="/images/home.png" alt="daftar cerita"/>
+                 <img src="https://res.cloudinary.com/dnaf6s355/image/upload/v1758681683/home_g4ct7v.png" alt="daftar cerita"/>
                 </Home>
                 <Title>
-                    <img src="/images/katahariini.png" alt="katahariini"></img>
+                    <img src="https://res.cloudinary.com/dnaf6s355/image/upload/v1758515292/katahariini_qycvok.png" alt="katahariini"></img>
                 </Title>
                 <ButtonArea>
                 <Button1 to="/flashcardbelajar">
-                       <img src="/images/flashcards.png" alt="flashcards"></img>             
+                       <img src="https://res.cloudinary.com/dnaf6s355/image/upload/v1758514585/flashcards_xpfahw.png" alt="flashcards"></img>             
                 </Button1>
                 <Button2 to="/belajar">
-                       <img src="/images/cerita.png" alt="cerita"></img>             
+                       <img src="https://res.cloudinary.com/dnaf6s355/image/upload/v1758701887/cerita_e3c9wy.png" alt="cerita"></img>             
                 </Button2>
                 </ButtonArea>
                 <div className="flex flex-wrap gap-4">

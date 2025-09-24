@@ -5,32 +5,32 @@ import { useNavigate } from 'react-router-dom';
 
 const flashcards = [
     {
-        questionImage:"/images/tubuh/tubuh.png",
-        answerVideo:'/videos/tubuh/isyarattubuh.mp4'
+        questionImage:"https://res.cloudinary.com/dnaf6s355/image/upload/v1758694949/tubuh_ouqole.png",
+        answerVideo:'https://res.cloudinary.com/dnaf6s355/video/upload/v1758694967/isyarattubuh_li28zj.mp4'
     },
     {
-        questionImage:'/images/tubuh/hidung.png',
-        answerVideo:'/videos/tubuh/isyarathidung.mp4'
+        questionImage:'https://res.cloudinary.com/dnaf6s355/image/upload/v1758694954/hidung_gl1fnw.png',
+        answerVideo:'https://res.cloudinary.com/dnaf6s355/video/upload/v1758694958/isyarathidung_eplhbe.mp4'
     },
     {
-        questionImage:'/images/tubuh/mulut.png',
-        answerVideo:'/videos/tubuh/isyaratmulut.mp4'
+        questionImage:'https://res.cloudinary.com/dnaf6s355/image/upload/v1758694941/mulut_ijcw1k.png',
+        answerVideo:'https://res.cloudinary.com/dnaf6s355/video/upload/v1758694966/isyaratmulut_rll6dn.mp4'
     },
     {
-        questionImage:'/images/tubuh/tangan.png',
-        answerVideo:'/videos/tubuh/isyarattangan.mp4'
+        questionImage:'https://res.cloudinary.com/dnaf6s355/image/upload/v1758694952/tangan_k0hexc.png',
+        answerVideo:'https://res.cloudinary.com/dnaf6s355/video/upload/v1758694961/isyarattangan_vxjobr.mp4'
     },
     {
-        questionImage: '/images/tubuh/kaki.png',
-        answerVideo:'/videos/tubuh/isyaratkaki.mp4'
+        questionImage: 'https://res.cloudinary.com/dnaf6s355/image/upload/v1758694951/kaki_tos34e.png',
+        answerVideo:'https://res.cloudinary.com/dnaf6s355/video/upload/v1758694964/isyaratkaki_bhx7j0.mp4'
     },
     {
-        questionImage: '/images/tubuh/mata.png',
-        answerVideo:'/videos/tubuh/isyaratmata.mp4'
+        questionImage: 'https://res.cloudinary.com/dnaf6s355/image/upload/v1758694948/mata_rkr7n0.png',
+        answerVideo:'https://res.cloudinary.com/dnaf6s355/video/upload/v1758694963/isyaratmata_bspedm.mp4'
     },
     {
-        questionImage: '/images/tubuh/telinga.png',
-        answerVideo:'/videos/tubuh/isyarattelinga.mp4'
+        questionImage: 'https://res.cloudinary.com/dnaf6s355/image/upload/v1758694956/telinga_yxbbyy.png',
+        answerVideo:'https://res.cloudinary.com/dnaf6s355/video/upload/v1758694960/isyarattelinga_ziogia.mp4'
     }
 ];
 
@@ -71,7 +71,7 @@ export default function FlashcardWajah() {
             setCurrentIndex(currentIndex + 1);
             setIsFlipped(false);
         } else {
-            setPopupMessage(<img src="/images/popupselesai.png" alt="kamu benar!" />);
+            setPopupMessage(<img src="https://res.cloudinary.com/dnaf6s355/image/upload/v1758687122/popupselesai_m9pltm.png" alt="kamu benar!" />);
             setShowPopup(true);
             setTimeout(()=> setAnimatePopup(true), 10);
         }
@@ -107,7 +107,7 @@ export default function FlashcardWajah() {
         <Wrapper>
             <BackgroundContainer>
                 <Home onClick={() => navigate('/daftarcerita')}>
-                        <img src='/images/home.png' alt="home" />
+                        <img src='https://res.cloudinary.com/dnaf6s355/image/upload/v1758681683/home_g4ct7v.png' alt="home" />
                 </Home>
                 <AnimatePresence mode="wait">
                 <motion.div
@@ -135,7 +135,7 @@ export default function FlashcardWajah() {
                             height: "100%"}}/>
                             content
                         </Front>
-                        <ReverseHint src="/images/reversearrow.png" alt="Balik kartu" />
+                        <ReverseHint src="https://res.https://res.cloudinary.com/dnaf6s355/image/upload/v1758687003/reversearrow_cna2nj.pngcloudinary.com/dnaf6s355/image/upload/v1758515160/isyarat_tpbr1s.png" alt="Balik kartu" />
                         <Back>
                             <video
                             controlsList="nodownload noremoteplayback" 
@@ -163,8 +163,8 @@ export default function FlashcardWajah() {
                 </AnimatePresence>
                 <ButtonArea>
                 <Controls>
-                    <Button1 onClick={handleReset}> <img src='images/kocokkartu.png' alt="kocok kartu"></img></Button1>
-                    <Button2 onClick={handleNextCard}> <img src='images/kartuselanjutnya.png' alt="kartu selanjutnya"></img></Button2>
+                    <Button1 onClick={handleReset}> <img src='https://res.cloudinary.com/dnaf6s355/image/upload/v1758515878/kocokkartu_cxib4h.png' alt="kocok kartu"></img></Button1>
+                    <Button2 onClick={handleNextCard}> <img src='https://res.cloudinary.com/dnaf6s355/image/upload/v1758515292/kartuselanjutnya_hxaquq.png' alt="kartu selanjutnya"></img></Button2>
                 </Controls>
                 </ButtonArea>
             </BackgroundContainer>
@@ -182,10 +182,10 @@ export default function FlashcardWajah() {
             {popupMessage}
             <PopupButton>
             <Button3 onClick={handleBelajarLagi}>
-                <img src='images/belajarlagi.png' alt="belajarlagi" />
+                <img src='https://res.cloudinary.com/dnaf6s355/image/upload/v1758514129/belajarlagi_vyrwq2.png' alt="belajarlagi" />
             </Button3>
             <Button4 onClick={handleLanjutGames}>
-                <img src='images/lanjutgame.png' alt="lanjutgames" />
+                <img src='https://res.cloudinary.com/dnaf6s355/image/upload/v1758516417/lanjutgame_evsr8q.png' alt="lanjutgames" />
             </Button4>    
             </PopupButton>
             </div> 

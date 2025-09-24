@@ -13,32 +13,32 @@ const WajahPage = () => {
     
     const steps = [
     {
-      illustrationVideo: '/videos/tubuh/tubuh1.mp4',
-      isyaratVideo: '/videos/tubuh/isyarat1.mp4'
+      illustrationVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758694996/tubuh1_xuusun.mp4',
+      isyaratVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758694976/isyarat1_yal6zn.mp4'
     },
     {
-      illustrationVideo: '/videos/tubuh/tubuh2.mp4',
-      isyaratVideo: '/videos/tubuh/isyarat2.mp4'
+      illustrationVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758694979/tubuh2_xscawd.mp4',
+      isyaratVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758694977/isyarat2_kqlg4v.mp4'
     },
     {
-      illustrationVideo: '/videos/tubuh/tubuh3.mp4',
-      isyaratVideo: '/videos/tubuh/isyarat3.mp4'
+      illustrationVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758694995/tubuh3_ywm1cv.mp4',
+      isyaratVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758694986/isyarat3_bsoaya.mp4'
     },
     {
-      illustrationVideo: '/videos/tubuh/tubuh4.mp4',
-      isyaratVideo: '/videos/tubuh/isyarat4.mp4'
+      illustrationVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758695002/tubuh4_eic08d.mp4',
+      isyaratVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758694982/isyarat4_rfrxqs.mp4'
     },
     {
-      illustrationVideo: '/videos/tubuh/tubuh5.mp4',
-      isyaratVideo: '/videos/tubuh/isyarat5.mp4'
+      illustrationVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758694969/tubuh5_ttwr0l.mp4',
+      isyaratVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758694983/isyarat5_wlpdxa.mp4'
     },
     {
-      illustrationVideo: '/videos/tubuh/tubuh6.mp4',
-      isyaratVideo: '/videos/tubuh/isyarat6.mp4'
+      illustrationVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758694993/tubuh6_exjmzz.mp4',
+      isyaratVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758694972/isyarat6_jdpkwf.mp4'
     },
     {
-      illustrationVideo: '/videos/tubuh/tubuh7.mp4',
-      isyaratVideo: '/videos/tubuh/isyarat7.mp4'
+      illustrationVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758694983/tubuh7_gdqrgk.mp4',
+      isyaratVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758694973/isyarat7_mf4pmq.mp4'
     }
   ];
 
@@ -126,7 +126,7 @@ const WajahPage = () => {
           }}
         />
              <IsyaratButton onClick={() => setShowPopup(true)}>
-                <img src="/images/isyarat.png" alt ="isyarat"></img>
+                <img src="https://res.cloudinary.com/dnaf6s355/image/upload/v1758515160/isyarat_tpbr1s.png" alt ="isyarat"></img>
              </IsyaratButton>
              {showPopup && (
                 <VideoPopup
@@ -139,12 +139,12 @@ const WajahPage = () => {
              <Arrow onClick={() => {
                 handleNextStep();
              }}>
-                <img src="/images/arrow.png" alt ="text"></img>
+                <img src="https://res.cloudinary.com/dnaf6s355/image/upload/v1758514126/arrow_w9b0iz.png" alt ="text"></img>
              </Arrow>
              <ArrowBack onClick={() => {
                 handleNextStepBack();
              }}>
-                <img src="/images/arrowback.png" alt="text"></img>
+                <img src="https://res.cloudinary.com/dnaf6s355/image/upload/v1758514126/arrowback_rjmxfc.png" alt="text"></img>
              </ArrowBack>
              </Wrapper>
              </div>

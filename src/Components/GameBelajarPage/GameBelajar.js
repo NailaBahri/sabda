@@ -10,52 +10,52 @@ import { getAuth } from "firebase/auth";
 
 const questions = [
   {
-    questionVideo: '/videos/belajar/isyaratmenulis.mp4',
+    questionVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758513236/isyaratmenulis_eebkuo.mp4',
     options: [
-      '/images/belajar/menulis.png',
-      '/images/belajar/membaca.png',
-      '/images/belajar/temanteman.png',
-      '/images/belajar/belajar.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514136/menulis_p75s4f.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514129/membaca_dlg3mk.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514129/temanteman_vhjbek.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514128/belajar_qm9nep.png',
     ],
     correctIndex: 0,
   },
   {
-    questionVideo: '/videos/belajar/isyaratmembaca.mp4',
+    questionVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758513232/isyaratmembaca_tae97v.mp4',
     options: [
-      '/images/belajar/membaca.png',
-      '/images/belajar/menulis.png',
-      '/images/belajar/pensil.png',
-      '/images/belajar/buku.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514129/membaca_dlg3mk.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514136/menulis_p75s4f.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514128/belajar_qm9nep.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514129/temanteman_vhjbek.png',
     ],
     correctIndex: 0,
   },
   {
-    questionVideo: '/videos/belajar/isyarattemanteman.mp4',
+    questionVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758513234/isyarattemanteman_trvlnr.mp4',
     options: [
-      '/images/belajar/menulis.png',
-      '/images/belajar/membaca.png',
-      '/images/belajar/temanteman.png',
-      '/images/belajar/belajar.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514136/menulis_p75s4f.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514129/membaca_dlg3mk.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514129/temanteman_vhjbek.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514128/belajar_qm9nep.png',
     ],
     correctIndex: 2,
   },
   {
-    questionVideo: '/videos/belajar/isyaratbelajar.mp4',
+    questionVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758513239/isyaratbelajar_m5nnvb.mp4',
     options: [
-      '/images/belajar/membaca.png',
-      '/images/belajar/menulis.png',
-      '/images/belajar/belajar.png',
-      '/images/belajar/temanteman.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514129/membaca_dlg3mk.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514136/menulis_p75s4f.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514128/belajar_qm9nep.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514129/temanteman_vhjbek.png',
     ],
     correctIndex: 2,
   },
   {
-    questionVideo: '/videos/belajar/isyaratmembaca.mp4',
+    questionVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758513232/isyaratmembaca_tae97v.mp4',
     options: [
-      '/images/belajar/menulis.png',
-      '/images/belajar/temanteman.png',
-      '/images/belajar/membaca.png',
-      '/images/belajar/buku.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514136/menulis_p75s4f.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514129/temanteman_vhjbek.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514129/membaca_dlg3mk.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514128/belajar_qm9nep.png',
     ],
     correctIndex: 2,
   }
@@ -154,11 +154,11 @@ const GameBelajar = () => {
           if (index == questions [currentQuestion].correctIndex) {
             setIsCorrect(true); 
             setCorrectCount(prev => prev+1);
-            setPopupMessage("/images/popupbenar.png");
+            setPopupMessage("https://res.cloudinary.com/dnaf6s355/image/upload/v1758687122/popupbenar_nq22nj.png");
             setCorrectionAnswer(false);
           } else {
             setIsIncorrect(true);
-            setPopupMessage("/images/popupsalah.png");
+            setPopupMessage("https://res.cloudinary.com/dnaf6s355/image/upload/v1758687122/popupsalah_gyzbj8.png");
           }
           setShowPopup(true);
           setTimeout(()=> setAnimatePopup(true), 10);
@@ -195,7 +195,7 @@ const GameBelajar = () => {
       <Wrapper onClick={handleGlobalClick}>
         <BackgroundContainer>
           <Home onClick={() => navigate('/daftarcerita')}>
-            <img src='/images/home.png' alt="home" />
+            <img src='https://res.cloudinary.com/dnaf6s355/image/upload/v1758681683/home_g4ct7v.png' alt="home" />
           </Home>
           <VideoWrapper>
           <VideoQuestion>

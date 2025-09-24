@@ -3,72 +3,72 @@ import { Wrapper, Home, PopupContent, PopupOverlay, Button, CloseButton, LetterC
 import { Link, useNavigate} from 'react-router-dom';
 
 const cardData = [
-    { title: 'hewan', video:'/videos/hewan/isyarathewan.mp4', image: '/images/hewan/hewan.png', label: '/images/hewan/labelhewan.png',
+    { title: 'hewan', video:'https://res.cloudinary.com/dnaf6s355/video/upload/v1758513250/isyarathewan_smgudb.mp4', image: 'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514586/hewan_dppxxm.png', label: '/images/hewan/labelhewan.png',
             // Hewan
         letters: [
-        { letter: "H", video: "/videos/huruf/H.mp4" },
-        { letter: "E", video: "/videos/huruf/E.mp4" },
-        { letter: "W", video: "/videos/huruf/W.mp4" },
-        { letter: "A", video: "/videos/huruf/A.mp4" },
-        { letter: "N", video: "/videos/huruf/N.mp4" },
+        { letter: "H", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513297/H_mfr6xt.mp4" },
+        { letter: "E", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513282/E_rpsnca.mp4" },
+        { letter: "W", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513331/W_lrhkc2.mp4" },
+        { letter: "A", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513265/A_xtc2y1.mp4" },
+        { letter: "N", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513308/N_yfm95q.mp4" },
         ],},
-    { title: 'ayam',  video:'/videos/hewan/isyaratayam.mp4', image: '/images/hewan/ayam.png', label:'/images/hewan/labelayam.png',
+    { title: 'ayam',  video:'https://res.cloudinary.com/dnaf6s355/video/upload/v1758513247/isyaratayam_f7g0uo.mp4', image: 'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514586/ayam_i5rfu6.png', label:'/images/hewan/labelayam.png',
                 // Ayam
         letters: [
-        { letter: "A", video: "/videos/huruf/A.mp4" },
-        { letter: "Y", video: "/videos/huruf/Y.mp4" },
-        { letter: "A", video: "/videos/huruf/A.mp4" },
-        { letter: "M", video: "/videos/huruf/M.mp4" },
+        { letter: "A", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513265/A_xtc2y1.mp4" },
+        { letter: "Y", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758700230/WhatsApp_Video_2025-09-19_at_08.09.33_2a1ef62f_su0ygc.mp4" },
+        { letter: "A", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513265/A_xtc2y1.mp4" },
+        { letter: "M", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513314/M_xdnnwr.mp4" },
         ],
     },
-    { title: 'kambing',  video:'/videos/hewan/isyaratkambing.mp4', image: '/images/hewan/kambing.png', label:'/images/hewan/labelkambing.png',
+    { title: 'kambing',  video:'https://res.cloudinary.com/dnaf6s355/video/upload/v1758513251/isyaratkambing_joo1wb.mp4', image: 'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514587/kambing_zqxg3k.png', label:'/images/hewan/labelkambing.png',
                 // Kambing
         letters: [
-        { letter: "K", video: "/videos/huruf/K.mp4" },
-        { letter: "A", video: "/videos/huruf/A.mp4" },
-        { letter: "M", video: "/videos/huruf/M.mp4" },
-        { letter: "B", video: "/videos/huruf/B.mp4" },
-        { letter: "I", video: "/videos/huruf/I.mp4" },
-        { letter: "N", video: "/videos/huruf/N.mp4" },
-        { letter: "G", video: "/videos/huruf/G.mp4" },
+        { letter: "K", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513293/K_cyeesk.mp4" },
+        { letter: "A", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513265/A_xtc2y1.mp4" },
+        { letter: "M", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513314/M_xdnnwr.mp4" },
+        { letter: "B", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513271/B_qao3nh.mp4" },
+        { letter: "I", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513296/I_o0kjif.mp4" },
+        { letter: "N", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513308/N_yfm95q.mp4" },
+        { letter: "G", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513284/G_dsxws9.mp4" },
         ],
     },
-    { title: 'bebek',  video:'/videos/hewan/isyaratbebek.mp4', image: '/images/hewan/bebek.png', label:'/images/hewan/labelbebek.png',
+    { title: 'bebek',  video:'https://res.cloudinary.com/dnaf6s355/video/upload/v1758513249/isyaratbebek_cif4sc.mp4', image: 'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514593/bebek_ytl1tl.png', label:'/images/hewan/labelbebek.png',
                 // Bebek
         letters: [
-        { letter: "B", video: "/videos/huruf/B.mp4" },
-        { letter: "E", video: "/videos/huruf/E.mp4" },
-        { letter: "B", video: "/videos/huruf/B.mp4" },
-        { letter: "E", video: "/videos/huruf/E.mp4" },
-        { letter: "K", video: "/videos/huruf/K.mp4" },
+        { letter: "B", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513271/B_qao3nh.mp4" },
+        { letter: "E", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513282/E_rpsnca.mp4" },
+        { letter: "B", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513271/B_qao3nh.mp4" },
+        { letter: "E", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513282/E_rpsnca.mp4" },
+        { letter: "K", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513293/K_cyeesk.mp4" },
         ],
     },
-    { title: 'peternakan',  video:'/videos/hewan/isyaratpeternakan.mp4', image: '/images/hewan/peternakan.png', label:'/images/hewan/labelpeternakan.png',
+    { title: 'peternakan',  video:'https://res.cloudinary.com/dnaf6s355/video/upload/v1758513253/isyaratpeternakan_qfkcfq.mp4', image: 'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514648/peternakan_s92eop.png', label:'/images/hewan/labelpeternakan.png',
                 // Peternakan
         letters: [
-        { letter: "P", video: "/videos/huruf/P.mp4" },
-        { letter: "E", video: "/videos/huruf/E.mp4" },
-        { letter: "T", video: "/videos/huruf/T.mp4" },
-        { letter: "E", video: "/videos/huruf/E.mp4" },
-        { letter: "R", video: "/videos/huruf/R.mp4" },
-        { letter: "N", video: "/videos/huruf/N.mp4" },
-        { letter: "A", video: "/videos/huruf/A.mp4" },
-        { letter: "K", video: "/videos/huruf/K.mp4" },
-        { letter: "A", video: "/videos/huruf/A.mp4" },
-        { letter: "N", video: "/videos/huruf/N.mp4" },
+        { letter: "P", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513322/P_dxkuck.mp4" },
+        { letter: "E", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513282/E_rpsnca.mp4" },
+        { letter: "T", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513324/T_mbkm3s.mp4.mp4" },
+        { letter: "E", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513282/E_rpsnca.mp4" },
+        { letter: "R", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513314/R_gmlio5.mp4" },
+        { letter: "N", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513308/N_yfm95q.mp4" },
+        { letter: "A", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513265/A_xtc2y1.mp4" },
+        { letter: "K", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513293/K_cyeesk.mp4" },
+        { letter: "A", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513265/A_xtc2y1.mp4" },
+        { letter: "N", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513308/N_yfm95q.mp4" },
         ],
     },
-    { title: 'berenang',  video:'/videos/hewan/isyaratberenang.mp4', image: '/images/hewan/berenang.png', label: '/images/hewan/labelberenang.png',
+    { title: 'berenang',  video:'https://res.cloudinary.com/dnaf6s355/video/upload/v1758513251/isyaratberenang_jr9aia.mp4', image: 'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514586/berenang_t41vmg.png', label: '/images/hewan/labelberenang.png',
                 // Berenang
         letters: [
-        { letter: "B", video: "/videos/huruf/B.mp4" },
-        { letter: "E", video: "/videos/huruf/E.mp4" },
-        { letter: "R", video: "/videos/huruf/R.mp4" },
-        { letter: "E", video: "/videos/huruf/E.mp4" },
-        { letter: "N", video: "/videos/huruf/N.mp4" },
-        { letter: "A", video: "/videos/huruf/A.mp4" },
-        { letter: "N", video: "/videos/huruf/N.mp4" },
-        { letter: "G", video: "/videos/huruf/G.mp4" },
+        { letter: "B", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513271/B_qao3nh.mp4" },
+        { letter: "E", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513282/E_rpsnca.mp4" },
+        { letter: "R", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513314/R_gmlio5.mp4" },
+        { letter: "E", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513282/E_rpsnca.mp4" },
+        { letter: "N", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513308/N_yfm95q.mp4" },
+        { letter: "A", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513265/A_xtc2y1.mp4" },
+        { letter: "N", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513308/N_yfm95q.mp4" },
+        { letter: "G", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513284/G_dsxws9.mp4" },
         ],
     }
 ]
@@ -82,18 +82,18 @@ const MateriHewan = () => {
     return (
         <Wrapper>
             <Home onClick={()=> navigate('/daftarcerita')}>
-                    <img src="/images/home.png" alt="daftar cerita"/>
+                    <img src="https://res.cloudinary.com/dnaf6s355/image/upload/v1758681683/home_g4ct7v.png" alt="daftar cerita"/>
                  </Home>
             <BackgroundContainer>
                 <Title>
-                    <img src="/images/katahariini.png" alt="katahariini"></img>
+                    <img src="https://res.cloudinary.com/dnaf6s355/image/upload/v1758515292/katahariini_qycvok.png" alt="katahariini"></img>
                 </Title>
                 <ButtonArea>
                 <Button1 to="/flashcardhewan">
-                       <img src="/images/flashcards.png" alt="flashcards"></img>             
+                       <img src="https://res.cloudinary.com/dnaf6s355/image/upload/v1758514585/flashcards_xpfahw.png" alt="flashcards"></img>             
                 </Button1>
                 <Button2 to="/hewan">
-                       <img src="/images/cerita.png" alt="cerita"></img>             
+                       <img src="https://res.cloudinary.com/dnaf6s355/image/upload/v1758701887/cerita_e3c9wy.png" alt="cerita"></img>             
                 </Button2>
                 </ButtonArea>
                 <div className="flex flex-wrap gap-4">

@@ -4,73 +4,73 @@ import { Link, useNavigate} from 'react-router-dom';
 
 
 const cardData = [
-    { title: 'mata', video:'/videos/tubuh/isyaratmata.mp4', image: '/images/tubuh/mata.png', label: '/images/tubuh/labelmata.png',
+    { title: 'mata', video:'https://res.cloudinary.com/dnaf6s355/video/upload/v1758694963/isyaratmata_bspedm.mp4', image: 'https://res.cloudinary.com/dnaf6s355/image/upload/v1758694948/mata_rkr7n0.png', label: '/images/tubuh/labelmata.png',
         letters: [
-      { letter: "M", video: "/videos/huruf/M.mp4" },
-      { letter: "A", video: "/videos/huruf/A.mp4" },
-      { letter: "T", video: "/videos/huruf/T.mp4" },
-      { letter: "A", video: "/videos/huruf/A.mp4" },
+      { letter: "M", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513314/M_xdnnwr.mp4" },
+      { letter: "A", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513265/A_xtc2y1.mp4" },
+      { letter: "T", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513324/T_mbkm3s.mp4.mp4" },
+      { letter: "A", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513265/A_xtc2y1.mp4" },
     ],
     },
-    { title: 'hidung', video:'/videos/tubuh/isyarathidung.mp4', image: '/images/tubuh/hidung.png', label:'/images/tubuh/labelhidung.png',
+    { title: 'hidung', video:'https://res.cloudinary.com/dnaf6s355/video/upload/v1758694958/isyarathidung_eplhbe.mp4', image: 'https://res.cloudinary.com/dnaf6s355/image/upload/v1758694954/hidung_gl1fnw.png', label:'/images/tubuh/labelhidung.png',
             letters: [
-    { letter: "H", video: "/videos/huruf/H.mp4" },
-    { letter: "I", video: "/videos/huruf/I.mp4" },
-    { letter: "D", video: "/videos/huruf/D.mp4" },
-    { letter: "U", video: "/videos/huruf/U.mp4" },
-    { letter: "N", video: "/videos/huruf/N.mp4" },
-    { letter: "G", video: "/videos/huruf/G.mp4" },
+    { letter: "H", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513297/H_mfr6xt.mp4" },
+    { letter: "I", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513296/I_o0kjif.mp4" },
+    { letter: "D", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513281/D_b2xclh.mp4" },
+    { letter: "U", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513329/U_pynxyg.mp4" },
+    { letter: "N", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513308/N_yfm95q.mp4" },
+    { letter: "G", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513284/G_dsxws9.mp4" },
     ],
     },
-    { title: 'mulut', video:'/videos/tubuh/isyaratmulut.mp4', image: '/images/tubuh/mulut.png', label:'/images/tubuh/labelmulut.png',
+    { title: 'mulut', video:'https://res.cloudinary.com/dnaf6s355/video/upload/v1758694966/isyaratmulut_rll6dn.mp4', image: 'https://res.cloudinary.com/dnaf6s355/image/upload/v1758694941/mulut_ijcw1k.png', label:'/images/tubuh/labelmulut.png',
             // Mulut
     letters: [
-    { letter: "M", video: "/videos/huruf/M.mp4" },
-    { letter: "U", video: "/videos/huruf/U.mp4" },
-    { letter: "L", video: "/videos/huruf/L.mp4" },
-    { letter: "U", video: "/videos/huruf/U.mp4" },
-    { letter: "T", video: "/videos/huruf/T.mp4" },
+    { letter: "M", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513314/M_xdnnwr.mp4" },
+    { letter: "U", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513329/U_pynxyg.mp4" },
+    { letter: "L", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513304/L_yzsrw1.mp4" },
+    { letter: "U", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513329/U_pynxyg.mp4" },
+    { letter: "T", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513324/T_mbkm3s.mp4.mp4" },
     ],
     },
-    { title: 'tangan', video:'/videos/tubuh/isyarattangan.mp4', image: '/images/tubuh/tangan.png', label:'/images/tubuh/labeltangan.png',
+    { title: 'tangan', video:'https://res.cloudinary.com/dnaf6s355/video/upload/v1758694961/isyarattangan_vxjobr.mp4', image: 'https://res.cloudinary.com/dnaf6s355/image/upload/v1758694952/tangan_k0hexc.png', label:'/images/tubuh/labeltangan.png',
             // Tangan
     letters: [
-    { letter: "T", video: "/videos/huruf/T.mp4" },
-    { letter: "A", video: "/videos/huruf/A.mp4" },
-    { letter: "N", video: "/videos/huruf/N.mp4" },
-    { letter: "G", video: "/videos/huruf/G.mp4" },
-    { letter: "A", video: "/videos/huruf/A.mp4" },
-    { letter: "N", video: "/videos/huruf/N.mp4" },
+    { letter: "T", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513324/T_mbkm3s.mp4.mp4" },
+    { letter: "A", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513265/A_xtc2y1.mp4" },
+    { letter: "N", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513308/N_yfm95q.mp4" },
+    { letter: "G", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513284/G_dsxws9.mp4" },
+    { letter: "A", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513265/A_xtc2y1.mp4" },
+    { letter: "N", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513308/N_yfm95q.mp4" },
     ],
     },
-    { title: 'kaki', video:'/videos/tubuh/isyaratkaki.mp4', image: '/images/tubuh/kaki.png', label:'/images/tubuh/labelkaki.png',
+    { title: 'kaki', video:'https://res.cloudinary.com/dnaf6s355/video/upload/v1758694964/isyaratkaki_bhx7j0.mp4', image: 'https://res.cloudinary.com/dnaf6s355/image/upload/v1758694951/kaki_tos34e.png', label:'/images/tubuh/labelkaki.png',
             // Kaki
     letters: [
-    { letter: "K", video: "/videos/huruf/K.mp4" },
-    { letter: "A", video: "/videos/huruf/A.mp4" },
-    { letter: "K", video: "/videos/huruf/K.mp4" },
-    { letter: "I", video: "/videos/huruf/I.mp4" },
+    { letter: "K", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513293/K_cyeesk.mp4" },
+    { letter: "A", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513265/A_xtc2y1.mp4" },
+    { letter: "K", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513293/K_cyeesk.mp4" },
+    { letter: "I", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513296/I_o0kjif.mp4" },
     ],
     },
-    { title: 'telinga', video:'/videos/tubuh/isyarattelinga.mp4', image: '/images/tubuh/telinga.png', label:'/images/tubuh/labeltelinga.png',
+    { title: 'telinga', video:'https://res.cloudinary.com/dnaf6s355/video/upload/v1758694960/isyarattelinga_ziogia.mp4', image: 'https://res.cloudinary.com/dnaf6s355/image/upload/v1758694956/telinga_yxbbyy.png', label:'/images/tubuh/labeltelinga.png',
             // Telinga
     letters: [
-    { letter: "T", video: "/videos/huruf/T.mp4" },
-    { letter: "E", video: "/videos/huruf/E.mp4" },
-    { letter: "L", video: "/videos/huruf/L.mp4" },
-    { letter: "I", video: "/videos/huruf/I.mp4" },
-    { letter: "N", video: "/videos/huruf/N.mp4" },
-    { letter: "G", video: "/videos/huruf/G.mp4" },
-    { letter: "A", video: "/videos/huruf/A.mp4" },
+    { letter: "T", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513324/T_mbkm3s.mp4.mp4" },
+    { letter: "E", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513282/E_rpsnca.mp4" },
+    { letter: "L", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513304/L_yzsrw1.mp4" },
+    { letter: "I", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513296/I_o0kjif.mp4" },
+    { letter: "N", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513308/N_yfm95q.mp4" },
+    { letter: "G", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513284/G_dsxws9.mp4" },
+    { letter: "A", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513265/A_xtc2y1.mp4" },
     ],
     },
-    { title: 'tubuh', video:'/videos/tubuh/isyarattubuh.mp4', image: '/images/tubuh/tubuh.png', label: '/images/tubuh/labeltubuh.png',
+    { title: 'tubuh', video:'https://res.cloudinary.com/dnaf6s355/video/upload/v1758694967/isyarattubuh_li28zj.mp4', image: 'https://res.cloudinary.com/dnaf6s355/image/upload/v1758694949/tubuh_ouqole.png', label: '/images/tubuh/labeltubuh.png',
             letters: [
-    { letter: "T", video: "/videos/huruf/T.mp4" },
-    { letter: "U", video: "/videos/huruf/U.mp4" },
-    { letter: "B", video: "/videos/huruf/B.mp4" },
-    { letter: "U", video: "/videos/huruf/U.mp4" },
-    { letter: "H", video: "/videos/huruf/H.mp4" },
+    { letter: "T", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513324/T_mbkm3s.mp4.mp4" },
+    { letter: "U", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513329/U_pynxyg.mp4" },
+    { letter: "B", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513271/B_qao3nh.mp4" },
+    { letter: "U", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513329/U_pynxyg.mp4" },
+    { letter: "H", video: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513297/H_mfr6xt.mp4" },
     ],
     }
 ]
@@ -83,18 +83,18 @@ const MateriWajah = () => {
     return (
         <Wrapper>
             <Home onClick={()=> navigate('/daftarcerita')}>
-                <img src="/images/home.png" alt="daftar cerita"/>
+                <img src="https://res.cloudinary.com/dnaf6s355/image/upload/v1758681683/home_g4ct7v.png" alt="daftar cerita"/>
              </Home>
             <BackgroundContainer>
                 <Title>
-                    <img src="/images/katahariini.png" alt="katahariini"></img>
+                    <img src="https://res.cloudinary.com/dnaf6s355/image/upload/v1758515292/katahariini_qycvok.png" alt="katahariini"></img>
                 </Title>
                 <ButtonArea>
                 <Button1 to="/flashcardtubuh">
-                       <img src="/images/flashcards.png" alt="flashcards"></img>             
+                       <img src="https://res.cloudinary.com/dnaf6s355/image/upload/v1758514585/flashcards_xpfahw.png" alt="flashcards"></img>             
                 </Button1>
                 <Button2 to="/tubuh">
-                       <img src="/images/cerita.png" alt="cerita"></img>             
+                       <img src="https://res.cloudinary.com/dnaf6s355/image/upload/v1758701887/cerita_e3c9wy.png" alt="cerita"></img>             
                 </Button2>
                 </ButtonArea>
                 <div className="flex flex-wrap gap-4">

@@ -10,52 +10,52 @@ import { ImagenAspectRatio } from 'firebase/ai';
 
 const questions = [
     {
-       questionVideo: '/videos/tubuh/isyarattangan.mp4',
+       questionVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758694961/isyarattangan_vxjobr.mp4',
        options: [
-       '/images/tubuh/mata.png',
-       '/images/tubuh/kaki.png',
-       '/images/tubuh/tangan.png',
-       '/images/tubuh/tubuh.png'
+       'https://res.cloudinary.com/dnaf6s355/image/upload/v1758694948/mata_rkr7n0.png',
+       'https://res.cloudinary.com/dnaf6s355/image/upload/v1758694951/kaki_tos34e.png',
+       'https://res.cloudinary.com/dnaf6s355/image/upload/v1758694952/tangan_k0hexc.png',
+       'https://res.cloudinary.com/dnaf6s355/image/upload/v1758694949/tubuh_ouqole.png'
        ],
        correctIndex: 2
     },
     {
-       questionVideo: '/videos/tubuh/isyaratkaki.mp4',
+       questionVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758694964/isyaratkaki_bhx7j0.mp4',
        options: [
-       '/images/tubuh/mulut.png',
-       '/images/tubuh/kaki.png',
-       '/images/tubuh/tubuh.png',
-       '/images/tubuh/hidung.png'
+       'https://res.cloudinary.com/dnaf6s355/image/upload/v1758694941/mulut_ijcw1k.png',
+       'https://res.cloudinary.com/dnaf6s355/image/upload/v1758694951/kaki_tos34e.png',
+       'https://res.cloudinary.com/dnaf6s355/image/upload/v1758694949/tubuh_ouqole.png',
+       'https://res.cloudinary.com/dnaf6s355/image/upload/v1758694954/hidung_gl1fnw.png'
        ],
        correctIndex: 1
     },
     {
-       questionVideo: '/videos/tubuh/isyarattubuh.mp4',
+       questionVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758694967/isyarattubuh_li28zj.mp4',
        options: [
-       '/images/tubuh/tubuh.png',
-       '/images/tubuh/hidung.png',
-       '/images/tubuh/kaki.png',
-       '/images/tubuh/mulut.png'
+       'https://res.cloudinary.com/dnaf6s355/image/upload/v1758694949/tubuh_ouqole.png',
+       'https://res.cloudinary.com/dnaf6s355/image/upload/v1758694954/hidung_gl1fnw.png',
+       'https://res.cloudinary.com/dnaf6s355/image/upload/v1758694951/kaki_tos34e.png',
+       'https://res.cloudinary.com/dnaf6s355/image/upload/v1758694941/mulut_ijcw1k.png'
        ],
        correctIndex: 0
     },
     {
-       questionVideo: '/videos/tubuh/isyaratmulut.mp4',
+       questionVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758694966/isyaratmulut_rll6dn.mp4',
        options: [
-       '/images/tubuh/kaki.png',
-       '/images/tubuh/mata.png',
-       '/images/tubuh/hidung.png',
-       '/images/tubuh/mulut.png'
+       'https://res.cloudinary.com/dnaf6s355/image/upload/v1758694951/kaki_tos34e.png',
+       'https://res.cloudinary.com/dnaf6s355/image/upload/v1758694948/mata_rkr7n0.png',
+       'https://res.cloudinary.com/dnaf6s355/image/upload/v1758694954/hidung_gl1fnw.png',
+       'https://res.cloudinary.com/dnaf6s355/image/upload/v1758694941/mulut_ijcw1k.png'
        ],
        correctIndex: 3
     },
     {
-       questionVideo: '/videos/tubuh/isyarathidung.mp4',
+       questionVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758694958/isyarathidung_eplhbe.mp4',
        options: [
-       '/images/tubuh/mata.png',
-       '/images/tubuh/hidung.png',
-       '/images/tubuh/mulut.png',
-       '/images/tubuh/tubuh.png'
+       'https://res.cloudinary.com/dnaf6s355/image/upload/v1758694948/mata_rkr7n0.png',
+       'https://res.cloudinary.com/dnaf6s355/image/upload/v1758694954/hidung_gl1fnw.png',
+       'https://res.cloudinary.com/dnaf6s355/image/upload/v1758694941/mulut_ijcw1k.png',
+       'https://res.cloudinary.com/dnaf6s355/image/upload/v1758694949/tubuh_ouqole.png'
        ],
        correctIndex: 1
     }
@@ -154,11 +154,11 @@ const GameWajah=() => {
       if (index == questions [currentQuestion].correctIndex) {
         setIsCorrect(true); 
         setCorrectCount(prev => prev+1);
-        setPopupMessage("/images/popupbenar.png");
+        setPopupMessage("https://res.cloudinary.com/dnaf6s355/image/upload/v1758687122/popupbenar_nq22nj.png");
         setCorrectionAnswer(false);
       } else {
         setIsIncorrect(true);
-        setPopupMessage("/images/popupsalah.png");
+        setPopupMessage("https://res.cloudinary.com/dnaf6s355/image/upload/v1758687122/popupsalah_gyzbj8.png");
       }
       setShowPopup(true);
       setTimeout(()=> setAnimatePopup(true), 10);
@@ -194,7 +194,7 @@ const GameWajah=() => {
     <Wrapper onClick={handleGlobalClick}>
       <BackgroundContainer>
         <Home onClick={() => navigate('/daftarcerita')}>
-         <img src='/images/home.png' alt="home" />
+         <img src='https://res.cloudinary.com/dnaf6s355/image/upload/v1758681683/home_g4ct7v.png' alt="home" />
         </Home>
         <VideoWrapper>
         <VideoQuestion>

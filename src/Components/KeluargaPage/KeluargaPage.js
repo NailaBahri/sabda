@@ -12,24 +12,24 @@ const KeluargaPage = () => {
 
   const steps = [
     {
-      illustrationVideo: '/videos/keluarga/keluarga 1.mp4',
-      isyaratVideo: '/videos/keluarga/isyarat1.mp4',
+      illustrationVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758692808/keluarga_1_o1bv68.mp4',
+      isyaratVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758692794/isyarat1_ugv0m4.mp4',
     },
     {
-      illustrationVideo: '/videos/keluarga/keluarga 2.mp4',
-      isyaratVideo: '/videos/keluarga/isyarat2.mp4',
+      illustrationVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758692804/keluarga_2_rtbtsd.mp4',
+      isyaratVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758692801/isyarat2_c2yvp4.mp4',
     },
     {
-      illustrationVideo: '/videos/keluarga/keluarga 3.mp4',
-      isyaratVideo: '/videos/keluarga/isyarat3.mp4',
+      illustrationVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758692805/keluarga_3_ymnmcw.mp4',
+      isyaratVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758692794/isyarat3_wmnkzs.mp4',
     },
     {
-      illustrationVideo: '/videos/keluarga/keluarga 4.mp4',
-      isyaratVideo: '/videos/keluarga/isyarat4.mp4',
+      illustrationVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758692811/keluarga_4_oy48us.mp4',
+      isyaratVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758692788/isyarat4_jyrfzu.mp4',
     },
     {
-      illustrationVideo: '/videos/keluarga/keluarga 5.mp4',
-      isyaratVideo: '/videos/keluarga/isyarat5.mp4',
+      illustrationVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758692799/keluarga_5_ful7mh.mp4',
+      isyaratVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758692788/isyarat5_md3b5w.mp4',
     },
   ];
 
@@ -118,7 +118,7 @@ const KeluargaPage = () => {
            }}
          />
       <IsyaratButton onClick={() => setShowPopup(true)}>
-        <img src="/images/isyarat.png" alt="isyarat"></img>
+        <img src="https://res.cloudinary.com/dnaf6s355/image/upload/v1758515160/isyarat_tpbr1s.png" alt="isyarat"></img>
       </IsyaratButton>
       {showPopup && (
         <VideoPopup 
@@ -131,14 +131,14 @@ const KeluargaPage = () => {
           handleNextStep();
         }}
       >
-        <img src="/images/arrow.png" alt="next"></img>
+        <img src="https://res.cloudinary.com/dnaf6s355/image/upload/v1758514126/arrow_w9b0iz.png" alt="next"></img>
       </Arrow>
       <ArrowBack
         onClick={() => {
           handleNextStepBack();
         }}
       >
-        <img src="/images/arrowback.png" alt="back"></img>
+        <img src="https://res.cloudinary.com/dnaf6s355/image/upload/v1758514126/arrowback_rjmxfc.png" alt="back"></img>
       </ArrowBack>
     </Wrapper>
     </div>

@@ -8,61 +8,61 @@ import { doc, updateDoc, arrayUnion, setDoc, increment, collection, addDoc, serv
 import { getAuth } from "firebase/auth";
 
 const cardData = [
-    { title: 'sedih', video:'/videos/perasaan/sedih.mp4', image: '/images/perasaan/sedih.png', label: '/images/perasaan/labelsedih.png'},
-    { title: 'marah', video:'/videos/perasaan/marah.mp4',image: '/images/perasaan/marah.png', label: '/images/perasaan/labelmarah.png'},
-    { title: 'bingung', video:'/videos/perasaan/bingung.mp4', image: '/images/perasaan/bingung.png', label: '/images/perasaan/labelbingung.png'},
-    { title: 'malu', video:'/videos/perasaan/malu.mp4', image: '/images/perasaan/malu.png', label: '/images/perasaan/labelmalu.png'},
-    { title: 'bahagia', video:'/videos/perasaan/bahagia.mp4', image: '/images/perasaan/bahagia.png', label: '/images/perasaan/labelbahagia.png'}
+    { title: 'sedih', video:'/videos/perasaan/sedih.mp4', image: 'https://res.cloudinary.com/dnaf6s355/image/upload/v1758694916/sedih_xpjajr.png', label: '/images/perasaan/labelsedih.png'},
+    { title: 'marah', video:'/videos/perasaan/marah.mp4',image: 'https://res.cloudinary.com/dnaf6s355/image/upload/v1758694912/marah_bpls6g.png', label: '/images/perasaan/labelmarah.png'},
+    { title: 'bingung', video:'/videos/perasaan/bingung.mp4', image: 'https://res.cloudinary.com/dnaf6s355/image/upload/v1758694913/bingung_haisgv.png', label: '/images/perasaan/labelbingung.png'},
+    { title: 'malu', video:'/videos/perasaan/malu.mp4', image: 'https://res.cloudinary.com/dnaf6s355/image/upload/v1758694918/malu_atcodg.png', label: '/images/perasaan/labelmalu.png'},
+    { title: 'bahagia', video:'/videos/perasaan/bahagia.mp4', image: 'https://res.cloudinary.com/dnaf6s355/image/upload/v1758694903/bahagia_fmehhy.png', label: '/images/perasaan/labelbahagia.png'}
 ]
 
 const questions = [
     {
-       questionVideo: '/videos/perasaan/isyaratmalu.mp4',
+       questionVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758694847/isyaratmalu_gqqtcw.mp4',
        options: [
-       '/images/perasaan/malu.png',
-       '/images/perasaan/sedih.png',
-       '/images/perasaan/bahagia.png',
-       '/images/perasaan/marah.png'
+       'https://res.cloudinary.com/dnaf6s355/image/upload/v1758694918/malu_atcodg.png',
+       'https://res.cloudinary.com/dnaf6s355/image/upload/v1758694916/sedih_xpjajr.png',
+       'https://res.cloudinary.com/dnaf6s355/image/upload/v1758694903/bahagia_fmehhy.png',
+       'https://res.cloudinary.com/dnaf6s355/image/upload/v1758694912/marah_bpls6g.png'
        ],
        correctIndex: 0
     },
     {
-       questionVideo: '/videos/perasaan/isyaratmarah.mp4',
+       questionVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758694845/isyaratmarah_gjyxqm.mp4',
        options: [
-       '/images/perasaan/sedih.png',
-       '/images/perasaan/bingung.png',
-       '/images/perasaan/marah.png',
-       '/images/perasaan/bahagia.png'
+       'https://res.cloudinary.com/dnaf6s355/image/upload/v1758694916/sedih_xpjajr.png',
+       'https://res.cloudinary.com/dnaf6s355/image/upload/v1758694913/bingung_haisgv.png',
+       'https://res.cloudinary.com/dnaf6s355/image/upload/v1758694912/marah_bpls6g.png',
+       'https://res.cloudinary.com/dnaf6s355/image/upload/v1758694903/bahagia_fmehhy.png'
        ],
        correctIndex: 2
     },
     {
-       questionVideo: '/videos/perasaan/isyaratsedih.mp4',
+       questionVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758694846/isyaratsedih_yluz97.mp4',
        options: [
-       '/images/perasaan/bingung.png',
-       '/images/perasaan/marah.png',
-       '/images/perasaan/bahagia.png',
-       '/images/perasaan/sedih.png'
+       'https://res.cloudinary.com/dnaf6s355/image/upload/v1758694913/bingung_haisgv.png',
+       'https://res.cloudinary.com/dnaf6s355/image/upload/v1758694912/marah_bpls6g.png',
+       'https://res.cloudinary.com/dnaf6s355/image/upload/v1758694903/bahagia_fmehhy.png',
+       'https://res.cloudinary.com/dnaf6s355/image/upload/v1758694916/sedih_xpjajr.png'
        ],
        correctIndex: 3
     },
     {
-       questionVideo: '/videos/perasaan/isyaratbahagia.mp4',
+       questionVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758694852/isyaratbahagia_s1jrwq.mp4',
        options: [
-       '/images/perasaan/bingung.png',
-       '/images/perasaan/malu.png',
-       '/images/perasaan/bahagia.png',
-       '/images/perasaan/marah.png'
+       'https://res.cloudinary.com/dnaf6s355/image/upload/v1758694913/bingung_haisgv.png',
+       'https://res.cloudinary.com/dnaf6s355/image/upload/v1758694918/malu_atcodg.png',
+       'https://res.cloudinary.com/dnaf6s355/image/upload/v1758694903/bahagia_fmehhy.png',
+       'https://res.cloudinary.com/dnaf6s355/image/upload/v1758694912/marah_bpls6g.png'
        ],
        correctIndex: 2
     },
     {
-       questionVideo: '/videos/perasaan/isyaratbingung.mp4',
+       questionVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758694857/isyaratbingung_micwym.mp4',
        options: [
-       '/images/perasaan/sedih.png',
-       '/images/perasaan/bingung.png',
-       '/images/perasaan/marah.png',
-       '/images/perasaan/malu.png'
+       'https://res.cloudinary.com/dnaf6s355/image/upload/v1758694916/sedih_xpjajr.png',
+       'https://res.cloudinary.com/dnaf6s355/image/upload/v1758694913/bingung_haisgv.png',
+       'https://res.cloudinary.com/dnaf6s355/image/upload/v1758694912/marah_bpls6g.png',
+       'https://res.cloudinary.com/dnaf6s355/image/upload/v1758694918/malu_atcodg.png'
        ],
        correctIndex: 1
     }
@@ -161,11 +161,11 @@ const GamePerasaan=() => {
           if (index == questions [currentQuestion].correctIndex) {
             setIsCorrect(true); 
             setCorrectCount(prev => prev+1);
-            setPopupMessage("/images/popupbenar.png");
+            setPopupMessage("https://res.cloudinary.com/dnaf6s355/image/upload/v1758687122/popupbenar_nq22nj.png");
             setCorrectionAnswer(false);
           } else {
             setIsIncorrect(true);
-            setPopupMessage("/images/popupsalah.png");
+            setPopupMessage("https://res.cloudinary.com/dnaf6s355/image/upload/v1758687122/popupsalah_gyzbj8.png");
           }
           setShowPopup(true);
           setTimeout(()=> setAnimatePopup(true), 10);
@@ -201,7 +201,7 @@ const GamePerasaan=() => {
     <Wrapper onClick={handleGlobalClick}>
       <BackgroundContainer>
         <Home onClick={() => navigate('/daftarcerita')}>
-                    <img src='/images/home.png' alt="home" />
+                    <img src='https://res.cloudinary.com/dnaf6s355/image/upload/v1758681683/home_g4ct7v.png' alt="home" />
                   </Home>
         <VideoWrapper>
         <VideoQuestion>

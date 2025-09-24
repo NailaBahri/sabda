@@ -6,11 +6,11 @@ import { doc, getDoc } from "firebase/firestore";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 
 const cardData = [
-    { title: 'tubuh', path: '/tubuh', image: '/images/cover-tubuh.png', label:'/images/label-tubuh.png', flashcard:'/flashcardtubuh', materi:'/kosakatatubuh', game:'/gametubuh', ar: '/ARtubuh'},
-    { title: 'keluarga', path: '/keluarga', image: '/images/cover-keluarga.png', label:'/images/label-keluarga.png', flashcard:'/flashcardkeluarga', materi:'/kosakatakeluarga', game:'/gamekeluarga', ar: '/ARkeluarga'},
-    { title: 'belajar', path: '/belajar', image: '/images/cover-belajar.png', label:'/images/label-belajar.png', flashcard:'/flashcardbelajar', materi:'/kosakatabelajar', game:'/gamebelajar', ar: '/ARbelajar'},
-    { title: 'hewan', path: '/hewan', image: '/images/cover-hewan.png', label:'/images/label-hewan.png', flashcard:'/flashcardhewan', materi:'/kosakatahewan', game:'/gamehewan', ar:'ARhewan'},
-    { title: 'perasaan', path: '/perasaan', image: '/images/cover-perasaan.png', label:'/images/label-perasaan.png', flashcard:'/flashcardperasaan', materi:'/kosakataperasaan', game:'/gameperasaan', ar: 'ARperasaan'}
+    { title: 'tubuh', path: '/tubuh', image: 'https://res.cloudinary.com/dnaf6s355/image/upload/v1758688106/cover-tubuh_vbbugu.png', label:'https://res.cloudinary.com/dnaf6s355/image/upload/v1758516258/label-tubuh_gnfwbj.png', flashcard:'/flashcardtubuh', materi:'/kosakatatubuh', game:'/gametubuh', ar: '/ARtubuh'},
+    { title: 'keluarga', path: '/keluarga', image: 'https://res.cloudinary.com/dnaf6s355/image/upload/v1758688108/cover-keluarga_kybd2b.png', label:'https://res.cloudinary.com/dnaf6s355/image/upload/v1758515295/labelkeluarga_bhw9mj.png', flashcard:'/flashcardkeluarga', materi:'/kosakatakeluarga', game:'/gamekeluarga', ar: '/ARkeluarga'},
+    { title: 'belajar', path: '/belajar', image: 'https://res.cloudinary.com/dnaf6s355/image/upload/v1758688109/cover-belajar_kzovd7.png', label:'https://res.cloudinary.com/dnaf6s355/image/upload/v1758516257/label-belajar_jdy06m.png', flashcard:'/flashcardbelajar', materi:'/kosakatabelajar', game:'/gamebelajar', ar: '/ARbelajar'},
+    { title: 'hewan', path: '/hewan', image: 'https://res.cloudinary.com/dnaf6s355/image/upload/v1758688118/cover-hewan_f3n0gn.png', label:'https://res.cloudinary.com/dnaf6s355/image/upload/v1758516257/label-hewan_dcfzge.png', flashcard:'/flashcardhewan', materi:'/kosakatahewan', game:'/gamehewan', ar:'ARhewan'},
+    { title: 'perasaan', path: '/perasaan', image: 'https://res.cloudinary.com/dnaf6s355/image/upload/v1758688116/cover-perasaan_idsr4n.png', label:'https://res.cloudinary.com/dnaf6s355/image/upload/v1758688369/label-perasaan_jmwtsv.png', flashcard:'/flashcardperasaan', materi:'/kosakataperasaan', game:'/gameperasaan', ar: 'ARperasaan'}
 ]
 
 const CARDS_PER_PAGE = 4;
@@ -86,17 +86,17 @@ const DaftarCerita = () => {
         <Wrapper>
             <BackgroundContainer>
                 <Title>
-                    <img src="/images/bukuceritaku.png" alt="daftarcerita"></img>
+                    <img src="https://res.cloudinary.com/dnaf6s355/image/upload/v1758687819/bukuceritaku_ppgpzn.png" alt="daftarcerita"></img>
                 </Title>
                 <ArrowBack onClick={() => navigate('/')}>
-                                    <img src="/images/arrowback.png" alt="arrowback"></img>
+                                    <img src="https://res.cloudinary.com/dnaf6s355/image/upload/v1758514126/arrowback_rjmxfc.png" alt="arrowback"></img>
                 </ArrowBack>
                 <ButtonArea>
                  <Button1 onClick={() => navigate('/tutorial')}>
-                                    <img src="/images/tutorial.png" alt="arrowback"></img>
+                                    <img src="https://res.cloudinary.com/dnaf6s355/image/upload/v1758687986/huruf_olmvb3.png" alt="tutorial"></img>
                 </Button1>
                 <Button2 onClick={() => navigate('/hurufSIBI')}>
-                                    <img src="/images/huruf.png" alt="arrowback"></img>
+                                    <img src="https://res.cloudinary.com/dnaf6s355/image/upload/v1758687986/huruf_olmvb3.png" alt="hurufSIBI"></img>
                 </Button2>
                 </ButtonArea>
                 <CardScrollWrapper>
@@ -113,24 +113,24 @@ const DaftarCerita = () => {
                         <CardLabel src={card.label} alt={card.title} />
                         <StarContainer>
                             {[...Array(stars)].map((_,index) =>
-                            <Star key={index} src="/images/star.png" alt="star"/>
+                            <Star key={index} src="https://res.cloudinary.com/dnaf6s355/image/upload/v1758688670/star_gip194.png" alt="star"/>
                             )}
                         </StarContainer>
                         <ActionsWrapper>
                         <Story to={card.path} key={card.title}>
-                            <img src='/images/materi.png' alt="buku ceritaa"></img>
+                            <img src='https://res.cloudinary.com/dnaf6s355/image/upload/v1758688556/materi_bbuvcp.png' alt="buku ceritaa"></img>
                         </Story>
                         <Flashcard to={card.flashcard} alt={card.title}>
-                            <img src='/images/flashcard.png' alt="flashcard"></img>
+                            <img src='https://res.cloudinary.com/dnaf6s355/image/upload/v1758514585/flashcard_qdorqg.png' alt="flashcard"></img>
                         </Flashcard>
                         <Game to={card.game} alt={card.title}>
-                            <img src='/images/game.png' alt="game"></img>
+                            <img src='https://res.cloudinary.com/dnaf6s355/image/upload/v1758514586/game_uvgu2t.png' alt="game"></img>
                         </Game>
                         <Game to={card.materi} alt={card.title}>
-                            <img src='/images/kamus.png' alt="materi"></img>
+                            <img src='https://res.cloudinary.com/dnaf6s355/image/upload/v1758515292/kamus_auykpc.png' alt="materi"></img>
                         </Game>
                         <AR to={card.ar} alt={card.ar}>
-                            <img src='/images/ar.png' alt="ar"></img>
+                            <img src='https://res.cloudinary.com/dnaf6s355/image/upload/v1758688629/ar_lkzacl.png' alt="ar"></img>
                         </AR>
                         </ActionsWrapper>
                     </Card>

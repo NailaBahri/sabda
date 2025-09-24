@@ -12,20 +12,20 @@ const BelajarPage = () => {
 
   const steps = [
     {
-      illustrationVideo: '/videos/belajar/belajar 1.mp4',
-      isyaratVideo: '/videos/belajar/isyarat1.mp4',
+      illustrationVideo: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513232/belajar_1_nwc5el.mp4",
+      isyaratVideo: "https://res.cloudinary.com/dnaf6s355/video/upload/v1758513242/isyarat1_nrs60o.mp4",
     },
     {
-      illustrationVideo: '/videos/belajar/belajar 2.mp4',
-      isyaratVideo: '/videos/belajar/isyarat2.mp4',
+      illustrationVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758513256/belajar_2_beiu3g.mp4',
+      isyaratVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758513237/isyarat2_jbbsxl.mp4',
     },
     {
-      illustrationVideo: '/videos/belajar/belajar 3.mp4',
-      isyaratVideo: '/videos/belajar/isyarat3.mp4',
+      illustrationVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758513244/belajar_3_nk0x6j.mp4',
+      isyaratVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758513237/isyarat3_xlviav.mp4',
     },
     {
-      illustrationVideo: '/videos/belajar/belajar 4.mp4',
-      isyaratVideo: '/videos/belajar/isyarat4.mp4',
+      illustrationVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758513236/belajar_4_fyab28.mp4',
+      isyaratVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758513239/isyarat4_hzx1m1.mp4',
     }
   ];
 
@@ -114,16 +114,16 @@ const BelajarPage = () => {
           }}
         />
       <IsyaratButton onClick={() => setShowPopup(true)}>
-        <img src="/images/isyarat.png" alt="isyarat" />
+        <img src="https://res.cloudinary.com/dnaf6s355/image/upload/v1758515160/isyarat_tpbr1s.png" alt="isyarat" />
       </IsyaratButton>
       {showPopup && (
         <VideoPopup key = {videoSrc} videoSrc={videoSrc} onClose={() => setShowPopup(false)} />
       )}
       <Arrow onClick={handleNextStep}>
-        <img src="/images/arrow.png" alt="next" />
+        <img src="https://res.cloudinary.com/dnaf6s355/image/upload/v1758514126/arrow_w9b0iz.png" alt="next" />
       </Arrow>
       <ArrowBack onClick={handleNextStepBack}>
-        <img src="/images/arrowback.png" alt="back" />
+        <img src="https://res.cloudinary.com/dnaf6s355/image/upload/v1758514126/arrowback_rjmxfc.png" alt="back" />
       </ArrowBack>
     </Wrapper>
     </div>

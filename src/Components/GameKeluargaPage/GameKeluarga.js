@@ -8,64 +8,55 @@ import { db } from "./../../firebase";
 import { doc, updateDoc, arrayUnion, setDoc, increment, collection, addDoc, serverTimestamp } from "firebase/firestore";
 import { getAuth } from "firebase/auth";
 
-const cardData = [
-    { title: 'keluarga', video:'/videos/keluarga/isyaratkeluarga.mp4', image: '/images/keluarga/keluarga.png', label: '/images/keluarga/labelkeluarga.png'},
-    { title: 'ayah', video:'/videos/keluarga/isyaratayah.mp4', image: '/images/keluarga/ayah.png', label:'/images/keluarga/labelayah.png'},
-    { title: 'ibu',  video:'/videos/keluarga/isyaratibu.mp4', image: '/images/keluarga/ibu.png', label:'/images/keluarga/labelibu.png'},
-    { title: 'adik',  video:'/videos/keluarga/isyaratadik.mp4', image:'/images/keluarga/adik.png', label:'/images/keluarga/labeladik.png'},
-    { title: 'kakak',  video:'/videos/keluarga/isyaratkakak.mp4', image: '/images/keluarga/kakak.png', label: '/images/keluarga/labelkakak.png'},
-    { title: 'bermain bola',  video:'/videos/keluarga/isyaratbermainbola.mp4', image: '/images/keluarga/bermainbola.png', label: '/images/keluarga/labelbermainbola.png'},
-    { title: 'berkebun', video:'/videos/keluarga/isyaratberkebun.mp4', image:'/images/keluarga/berkebun.png', label:'/images/keluarga/labelberkebun.png'},
-    { title: 'memasak',  video:'/videos/keluarga/isyaratmemasak.mp4', image:'/images/keluarga/memasak.png', label: '/images/keluarga/labelmemasak.png'}
-]
+
 const questions = [
   {
-    questionVideo: '/videos/keluarga/isyaratkeluarga.mp4',
+    questionVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758692791/isyaratkeluarga_rpmrsl.mp4',
     options: [
-      '/images/keluarga/kakak.png',
-      '/images/keluarga/adik.png',
-      '/images/keluarga/ayah.png',
-      '/images/keluarga/keluarga.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758515294/kakak_hfwm9e.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758515292/adik_trpftt.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758515298/ayah_ym9wwz.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758515294/keluarga_wgkzmv.png',
     ],
     correctIndex: 3,
   },
   {
-    questionVideo: '/videos/keluarga/isyaratadik.mp4',
+    questionVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758692789/isyaratadik_qxi4a7.mp4',
     options: [
-      '/images/keluarga/keluarga.png',
-      '/images/keluarga/kakak.png',
-      '/images/keluarga/adik.png',
-      '/images/keluarga/ibu.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758515294/keluarga_wgkzmv.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758515294/kakak_hfwm9e.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758515292/adik_trpftt.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758515294/ibu_q5rtcu.png',
     ],
     correctIndex: 2,
   },
   {
-    questionVideo: '/videos/keluarga/isyaratibu.mp4',
+    questionVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758692790/isyaratibu_e9iund.mp4',
     options: [
-      '/images/keluarga/ibu.png',
-      '/images/keluarga/ayah.png',
-      '/images/keluarga/kakak.png',
-      '/images/keluarga/adik.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758515294/ibu_q5rtcu.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758515298/ayah_ym9wwz.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758515294/kakak_hfwm9e.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758515292/adik_trpftt.png',
     ],
     correctIndex: 0,
   },
   {
-    questionVideo: '/videos/keluarga/isyaratayah.mp4',
+    questionVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758692794/isyaratayah_okfwsg.mp4',
     options: [
-      '/images/keluarga/kakak.png',
-      '/images/keluarga/ayah.png',
-      '/images/keluarga/adik.png',
-      '/images/keluarga/keluarga.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758515294/kakak_hfwm9e.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758515298/ayah_ym9wwz.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758515292/adik_trpftt.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758515294/keluarga_wgkzmv.png',
     ],
     correctIndex: 1,
   },
   {
-    questionVideo: '/videos/keluarga/isyaratkakak.mp4',
+    questionVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758692788/isyaratkakak_esfspe.mp4',
     options: [
-      '/images/keluarga/keluarga.png',
-      '/images/keluarga/kakak.png',
-      '/images/keluarga/ayah.png',
-      '/images/keluarga/ibu.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758515294/keluarga_wgkzmv.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758515294/kakak_hfwm9e.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758515298/ayah_ym9wwz.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758515294/ibu_q5rtcu.png',
     ],
     correctIndex: 1,
   }
@@ -165,11 +156,11 @@ const GameKeluarga = () => {
           if (index == questions [currentQuestion].correctIndex) {
             setIsCorrect(true); 
             setCorrectCount(prev => prev+1);
-            setPopupMessage("/images/popupbenar.png");
+            setPopupMessage("https://res.cloudinary.com/dnaf6s355/image/upload/v1758687122/popupbenar_nq22nj.png");
             setCorrectionAnswer(false);
           } else {
             setIsIncorrect(true);
-            setPopupMessage("/images/popupsalah.png");
+            setPopupMessage("https://res.cloudinary.com/dnaf6s355/image/upload/v1758687122/popupsalah_gyzbj8.png");
           }
           setShowPopup(true);
           setTimeout(()=> setAnimatePopup(true), 10);
@@ -205,7 +196,7 @@ const GameKeluarga = () => {
        <Wrapper onClick={handleGlobalClick}>
          <BackgroundContainer>
           <Home onClick={() => navigate('/daftarcerita')}>
-            <img src='/images/home.png' alt="home" />
+            <img src='https://res.cloudinary.com/dnaf6s355/image/upload/v1758681683/home_g4ct7v.png' alt="home" />
           </Home>
            <VideoWrapper>
            <VideoQuestion>

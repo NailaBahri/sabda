@@ -9,52 +9,52 @@ import { doc, updateDoc, arrayUnion, setDoc, increment, collection, addDoc, serv
 import { getAuth } from "firebase/auth";
 const questions = [
   {
-    questionVideo: '/videos/hewan/isyarathewan.mp4',
+    questionVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758513250/isyarathewan_smgudb.mp4',
     options: [
-      '/images/hewan/peternakan.png',
-      '/images/hewan/kambing.png',
-      '/images/hewan/bebek.png',
-      '/images/hewan/hewan.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514648/peternakan_s92eop.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514587/kambing_zqxg3k.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514593/bebek_ytl1tl.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514586/hewan_dppxxm.png',
     ],
     correctIndex: 3,
   },
   {
-    questionVideo: '/videos/hewan/isyaratkambing.mp4',
+    questionVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758513251/isyaratkambing_joo1wb.mp4',
     options: [
-      '/images/hewan/kambing.png',
-      '/images/hewan/peternakan.png',
-      '/images/hewan/bebek.png',
-      '/images/hewan/berenang.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514587/kambing_zqxg3k.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514648/peternakan_s92eop.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514593/bebek_ytl1tl.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514586/berenang_t41vmg.png',
     ],
     correctIndex: 0,
   },
   {
-    questionVideo: '/videos/hewan/isyaratbebek.mp4',
+    questionVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758513249/isyaratbebek_cif4sc.mp4',
     options: [
-      '/images/hewan/bebek.png',
-      '/images/hewan/kambing.png',
-      '/images/hewan/berenang.png',
-      '/images/hewan/peternakan.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514593/bebek_ytl1tl.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514587/kambing_zqxg3k.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514586/berenang_t41vmg.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514648/peternakan_s92eop.png',
     ],
     correctIndex: 0,
   },
   {
-    questionVideo: '/videos/hewan/isyaratpeternakan.mp4',
+    questionVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758513253/isyaratpeternakan_qfkcfq.mp4',
     options: [
-      '/images/hewan/kambing.png',
-      '/images/hewan/peternakan.png',
-      '/images/hewan/bebek.png',
-      '/images/hewan/berenang.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514587/kambing_zqxg3k.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514648/peternakan_s92eop.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514593/bebek_ytl1tl.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514586/berenang_t41vmg.png',
     ],
     correctIndex: 1,
   },
   {
-    questionVideo: '/videos/hewan/isyaratberenang.mp4',
+    questionVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758513251/isyaratberenang_jr9aia.mp4',
     options: [
-      '/images/hewan/peternakan.png',
-      '/images/hewan/bebek.png',
-      '/images/hewan/berenang.png',
-      '/images/hewan/kambing.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514648/peternakan_s92eop.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514593/bebek_ytl1tl.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514586/berenang_t41vmg.png',
+      'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514587/kambing_zqxg3k.png',
     ],
     correctIndex: 2,
   }
@@ -153,11 +153,11 @@ const GameHewan = () => {
           if (index == questions [currentQuestion].correctIndex) {
             setIsCorrect(true); 
             setCorrectCount(prev => prev+1);
-            setPopupMessage("/images/popupbenar.png");
+            setPopupMessage("https://res.cloudinary.com/dnaf6s355/image/upload/v1758687122/popupbenar_nq22nj.png");
             setCorrectionAnswer(false);
           } else {
             setIsIncorrect(true);
-            setPopupMessage("/images/popupsalah.png");
+            setPopupMessage("https://res.cloudinary.com/dnaf6s355/image/upload/v1758687122/popupsalah_gyzbj8.png");
           }
           setShowPopup(true);
           setTimeout(()=> setAnimatePopup(true), 10);
@@ -193,7 +193,7 @@ const GameHewan = () => {
       <Wrapper onClick={handleGlobalClick}>
         <BackgroundContainer>
           <Home onClick={() => navigate('/daftarcerita')}>
-          <img src='/images/home.png' alt="home" />
+          <img src='https://res.cloudinary.com/dnaf6s355/image/upload/v1758681683/home_g4ct7v.png' alt="home" />
           </Home>
           <VideoWrapper>
           <VideoQuestion>

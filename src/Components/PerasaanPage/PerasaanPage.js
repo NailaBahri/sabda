@@ -13,24 +13,24 @@ const PerasaanPage = () => {
     
     const steps = [
     {
-      illustrationVideo: '/videos/perasaan/perasaan1.mp4',
-      isyaratVideo: '/videos/perasaan/isyarat1.mp4'
+      illustrationVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758694876/perasaan1_sfo1eu.mp4',
+      isyaratVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758694864/isyarat1_x4rc6w.mp4'
     },
     {
-      illustrationVideo: '/videos/perasaan/perasaan2.mp4',
-      isyaratVideo: '/videos/perasaan/isyarat2.mp4'
+      illustrationVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758694854/perasaan2_cdyiid.mp4',
+      isyaratVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758694866/isyarat2_wxhpe3.mp4'
     },
     {
-      illustrationVideo: '/videos/perasaan/perasaan3.mp4',
-      isyaratVideo: '/videos/perasaan/isyarat3.mp4'
+      illustrationVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758694863/perasaan3_kqw4lc.mp4',
+      isyaratVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758694869/isyarat3_w1t3qw.mp4'
     },
     {
-      illustrationVideo: '/videos/perasaan/perasaan4.mp4',
-      isyaratVideo: '/videos/perasaan/isyarat4.mp4'
+      illustrationVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758694873/perasaan4_oqutwn.mp4',
+      isyaratVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758694859/isyarat4_o8mprx.mp4'
     },
     {
-      illustrationVideo: '/videos/perasaan/perasaan5.mp4',
-      isyaratVideo: '/videos/perasaan/isyarat5.mp4'
+      illustrationVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758694888/perasaan5_binrd3.mp4',
+      isyaratVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758694881/isyarat5_ktajxp.mp4'
     }
   ];
 
@@ -118,7 +118,7 @@ const PerasaanPage = () => {
           }}
         />
              <IsyaratButton onClick={() => setShowPopup(true)}>
-                <img src="/images/isyarat.png" alt ="isyarat"></img>
+                <img src="https://res.cloudinary.com/dnaf6s355/image/upload/v1758515160/isyarat_tpbr1s.png" alt ="isyarat"></img>
              </IsyaratButton>
              {showPopup && (
                 <VideoPopup key = {videoSrc} videoSrc={videoSrc} onClose={() => setShowPopup(false)} />
@@ -126,12 +126,12 @@ const PerasaanPage = () => {
              <Arrow onClick={() => {
                 handleNextStep();
              }}>
-                <img src="/images/arrow.png" alt ="text"></img>
+                <img src="https://res.cloudinary.com/dnaf6s355/image/upload/v1758514126/arrow_w9b0iz.png" alt ="text"></img>
              </Arrow>
              <ArrowBack onClick={() => {
                 handleNextStepBack();
              }}>
-                <img src="/images/arrowback.png" alt="text"></img>
+                <img src="https://res.cloudinary.com/dnaf6s355/image/upload/v1758514126/arrowback_rjmxfc.png" alt="text"></img>
              </ArrowBack>
              </Wrapper>
             </div>

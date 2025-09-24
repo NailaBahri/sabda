@@ -7,7 +7,7 @@ const ARKeluarga = () => {
     return (
         <Wrapper>
              <Home onClick={() => navigate('/daftarcerita')}>
-                          <img src='/images/home.png' alt="home" />
+                          <img src="https://res.cloudinary.com/dnaf6s355/image/upload/v1758681683/home_g4ct7v.png" alt="home" />
                           </Home>
             <img src="/images/keluargaqr.png" alt="keluarga"/>
         </Wrapper>

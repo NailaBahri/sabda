@@ -7,12 +7,12 @@ import { motion, AnimatePresence, easeOut } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 
 const flashcards = [
-  { questionImage: '/images/hewan/hewan.png', answerVideo: '/videos/hewan/isyarathewan.mp4' },
-  { questionImage: '/images/hewan/ayam.png', answerVideo: '/videos/hewan/isyaratayam.mp4' },
-  { questionImage: '/images/hewan/kambing.png', answerVideo: '/videos/hewan/isyaratkambing.mp4' },
-  { questionImage:'/images/hewan/bebek.png', answerVideo: '/videos/hewan/isyaratbebek.mp4' },
-  { questionImage: '/images/hewan/peternakan.png', answerVideo: '/videos/hewan/isyaratpeternakan.mp4' },
-  { questionImage:'/images/hewan/berenang.png', answerVideo: '/videos/hewan/isyaratberenang.mp4' },
+  { questionImage: 'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514586/hewan_dppxxm.png', answerVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758513250/isyarathewan_smgudb.mp4' },
+  { questionImage: 'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514586/ayam_i5rfu6.png', answerVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758513247/isyaratayam_f7g0uo.mp4' },
+  { questionImage: 'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514587/kambing_zqxg3k.png', answerVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758513251/isyaratkambing_joo1wb.mp4' },
+  { questionImage:'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514593/bebek_ytl1tl.png', answerVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758513249/isyaratbebek_cif4sc.mp4' },
+  { questionImage: 'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514648/peternakan_s92eop.png', answerVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758513253/isyaratpeternakan_qfkcfq.mp4' },
+  { questionImage:'https://res.cloudinary.com/dnaf6s355/image/upload/v1758514586/berenang_t41vmg.png', answerVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758513251/isyaratberenang_jr9aia.mp4' },
 ];
 
 function shuffleCards(cards) {
@@ -50,7 +50,7 @@ export default function FlashcardsHewan() {
       setCurrentIndex(currentIndex + 1);
       setIsFlipped(false);
     } else {
-      setPopupMessage(<img src="/images/popupselesai.png" alt="selesai" />);
+      setPopupMessage(<img src="https://res.cloudinary.com/dnaf6s355/image/upload/v1758687122/popupselesai_m9pltm.png" alt="selesai" />);
       setShowPopup(true);
       setTimeout(() => setAnimatePopup(true), 10);
     }
@@ -83,7 +83,7 @@ export default function FlashcardsHewan() {
     <Wrapper>
       <BackgroundContainer>
         <Home onClick={() => navigate('/daftarcerita')}>
-              <img src='/images/home.png' alt="home" />
+              <img src='https://res.cloudinary.com/dnaf6s355/image/upload/v1758681683/home_g4ct7v.png' alt="home" />
               </Home>
         <AnimatePresence mode="wait">
           <motion.div
@@ -106,7 +106,7 @@ export default function FlashcardsHewan() {
                             objectFit: "contain",
                             width: "100%",
                             height: "100%"}}/>
-                            <ReverseHint src="/images/reversearrow.png" alt="Balik kartu" />
+                            <ReverseHint src="https://res.https://res.cloudinary.com/dnaf6s355/image/upload/v1758687003/reversearrow_cna2nj.pngcloudinary.com/dnaf6s355/image/upload/v1758515160/isyarat_tpbr1s.png" alt="Balik kartu" />
                   </Front>
                   <Back>
                     <video width="700" height="350" controls
@@ -129,8 +129,8 @@ export default function FlashcardsHewan() {
                 </AnimatePresence>
                 <ButtonArea>
                 <Controls>
-                    <Button1 onClick={handleReset}> <img src='images/kocokkartu.png' alt="kocok kartu"></img></Button1>
-                    <Button2 onClick={handleNextCard}> <img src='images/kartuselanjutnya.png' alt="kartu selanjutnya"></img></Button2>
+                    <Button1 onClick={handleReset}> <img src='https://res.cloudinary.com/dnaf6s355/image/upload/v1758515878/kocokkartu_cxib4h.png' alt="kocok kartu"></img></Button1>
+                    <Button2 onClick={handleNextCard}> <img src='https://res.cloudinary.com/dnaf6s355/image/upload/v1758515292/kartuselanjutnya_hxaquq.png' alt="kartu selanjutnya"></img></Button2>
                 </Controls>
                 </ButtonArea>
             </BackgroundContainer>
@@ -148,10 +148,10 @@ export default function FlashcardsHewan() {
             {popupMessage}
             <PopupButton>
             <Button3 onClick={handleBelajarLagi}>
-                <img src='images/belajarlagi.png' alt="belajarlagi" />
+                <img src='https://res.cloudinary.com/dnaf6s355/image/upload/v1758514129/belajarlagi_vyrwq2.png' alt="belajarlagi" />
             </Button3>
             <Button4 onClick={handleLanjutGames}>
-                <img src='images/lanjutgame.png' alt="lanjutgames" />
+                <img src='https://res.cloudinary.com/dnaf6s355/image/upload/v1758516417/lanjutgame_evsr8q.png' alt="lanjutgames" />
             </Button4>    
             </PopupButton>
             </div> 

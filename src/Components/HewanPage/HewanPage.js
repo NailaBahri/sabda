@@ -12,24 +12,24 @@ const HewanPage = () => {
 
   const steps = [
     {
-      illustrationVideo: '/videos/hewan/peternakan1.mp4',
-      isyaratVideo: '/videos/hewan/isyarat1.mp4',
+      illustrationVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758513266/peternakan1_sb0d2f.mp4',
+      isyaratVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758513242/isyarat1_xfwfcn.mp4',
     },
     {
-      illustrationVideo: '/videos/hewan/peternakan2.mp4',
-      isyaratVideo: '/videos/hewan/isyarat2.mp4',
+      illustrationVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758513260/peternakan2_naxlwc.mp4',
+      isyaratVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758513251/isyarat2_zmusmb.mp4',
     },
     {
-      illustrationVideo: '/videos/hewan/peternakan3.mp4',
-      isyaratVideo: '/videos/hewan/isyarat3.mp4',
+      illustrationVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758513258/peternakan3_rn7qlt.mp4',
+      isyaratVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758513245/isyarat3_yjvez5.mp4',
     },
     {
-      illustrationVideo: '/videos/hewan/peternakan4.mp4',
-      isyaratVideo: '/videos/hewan/isyarat4.mp4',
+      illustrationVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758513259/peternakan4_xpfefp.mp4',
+      isyaratVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758513248/isyarat4_kzbokd.mp4',
     },
     {
-      illustrationVideo: '/videos/hewan/peternakan5.mp4',
-      isyaratVideo: '/videos/hewan/isyarat5.mp4',
+      illustrationVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758513272/peternakan5_r0ogfw.mp4',
+      isyaratVideo: 'https://res.cloudinary.com/dnaf6s355/video/upload/v1758513249/isyarat5_ghmof4.mp4',
     },
   ];
 
@@ -118,16 +118,16 @@ const HewanPage = () => {
           }}
         />
       <IsyaratButton onClick={() => setShowPopup(true)}>
-        <img src="/images/isyarat.png" alt="isyarat" />
+        <img src="https://res.cloudinary.com/dnaf6s355/image/upload/v1758515160/isyarat_tpbr1s.png" alt="isyarat" />
       </IsyaratButton>
       {showPopup && (
         <VideoPopup key = {videoSrc} videoSrc={videoSrc} onClose={() => setShowPopup(false)} />
       )}
       <Arrow onClick={handleNextStep}>
-        <img src="/images/arrow.png" alt="next" />
+        <img src="https://res.cloudinary.com/dnaf6s355/image/upload/v1758514126/arrow_w9b0iz.png" alt="next" />
       </Arrow>
       <ArrowBack onClick={handleNextStepBack}>
-        <img src="/images/arrowback.png" alt="back" />
+        <img src="https://res.cloudinary.com/dnaf6s355/image/upload/v1758514126/arrowback_rjmxfc.png" alt="back" />
       </ArrowBack>
     </Wrapper>
     </div>
