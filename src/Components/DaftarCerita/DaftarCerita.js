@@ -93,7 +93,7 @@ const DaftarCerita = () => {
                 </ArrowBack>
                 <ButtonArea>
                  <Button1 onClick={() => navigate('/tutorial')}>
-                                    <img src="https://res.cloudinary.com/dnaf6s355/image/upload/v1758687986/huruf_olmvb3.png" alt="tutorial"></img>
+                                    <img src="https://res.cloudinary.com/dnaf6s355/image/upload/v1758687996/tutorial_ujwscc.png" alt="tutorial"></img>
                 </Button1>
                 <Button2 onClick={() => navigate('/hurufSIBI')}>
                                     <img src="https://res.cloudinary.com/dnaf6s355/image/upload/v1758687986/huruf_olmvb3.png" alt="hurufSIBI"></img>
