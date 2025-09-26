@@ -86,7 +86,7 @@ const DaftarCerita = () => {
         <Wrapper>
             <BackgroundContainer>
                 <Title>
-                    <img src="https://res.cloudinary.com/dnaf6s355/image/upload/v1758687819/bukuceritaku_ppgpzn.png" alt="daftarcerita"></img>
+                    <img src="https://res.cloudinary.com/dnaf6s355/image/upload/v1758514130/bukuceritaku_jyztts.png" alt="daftarcerita"></img>
                 </Title>
                 <ArrowBack onClick={() => navigate('/')}>
                                     <img src="https://res.cloudinary.com/dnaf6s355/image/upload/v1758514126/arrowback_rjmxfc.png" alt="arrowback"></img>
@@ -121,13 +121,13 @@ const DaftarCerita = () => {
                             <img src='https://res.cloudinary.com/dnaf6s355/image/upload/v1758688556/materi_bbuvcp.png' alt="buku ceritaa"></img>
                         </Story>
                         <Flashcard to={card.flashcard} alt={card.title}>
-                            <img src='https://res.cloudinary.com/dnaf6s355/image/upload/v1758514585/flashcard_qdorqg.png' alt="flashcard"></img>
+                            <img src='https://res.cloudinary.com/dnaf6s355/image/upload/v1758860931/flashcard_hlgeif.png' alt="flashcard"></img>
                         </Flashcard>
                         <Game to={card.game} alt={card.title}>
-                            <img src='https://res.cloudinary.com/dnaf6s355/image/upload/v1758514586/game_uvgu2t.png' alt="game"></img>
+                            <img src='https://res.cloudinary.com/dnaf6s355/image/upload/v1758860941/game_kawelu.png' alt="game"></img>
                         </Game>
                         <Game to={card.materi} alt={card.title}>
-                            <img src='https://res.cloudinary.com/dnaf6s355/image/upload/v1758515292/kamus_auykpc.png' alt="materi"></img>
+                            <img src='https://res.cloudinary.com/dnaf6s355/image/upload/v1758860933/kamus_r2xfe2.png' alt="materi"></img>
                         </Game>
                         <AR to={card.ar} alt={card.ar}>
                             <img src='https://res.cloudinary.com/dnaf6s355/image/upload/v1758688629/ar_lkzacl.png' alt="ar"></img>
